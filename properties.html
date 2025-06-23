@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/ebere.css">
+    <title>Properties</title>
+</head>
+<body>
+    
+    <!-- nav bar starts here -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <!-- Logo on the left -->
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo/logo.avif" alt="Logo" width="100px">
+            </a>
+
+            <!-- Toggler for mobile view -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu aligned to the right -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto"> <!-- Added ms-auto here -->
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" aria-current="page" href="properties.html">Properties</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="agents.html">Agents</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            About
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="about.html">About us</a></li>
+                            <li><a class="dropdown-item" href="contact.html">Contact us</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Category
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="house.html">Houses</a></li>
+                            <li><a class="dropdown-item" href="dev.html">New Developments</a></li>
+                            <li><a class="dropdown-item" href="vil.html">Villas</a></li>
+                            <li><a class="dropdown-item" href="apartments.html">Apartments</a></li>
+                            <li><a class="dropdown-item" href="commercial.html">Commercial</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active btn btn-secondary text-white ebg_btn" aria-current="page"
+                            href="login.html">Login</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active btn btn-primary text-white ebg_btn" aria-current="page"
+                            href="register.html">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- nav bar ends here -->
+
+
+    <div class="text-white bg-secondary">
+        <br><br><br>
+        <h2 align="center">Properties</h2>
+        <center>
+            <a href="index.html" class="text-white">Home</a> <big>/</big> <a href="properties.html" class="text-white">Properties</a> <big>/</big> <a href="#!" class="text-white">Houses</a>
+        </center>
+        <br><br><br>
+    </div>
+
+
+
+    <br><br><br>
+
+    <!-- list of properties strat here -->
+    <div class="container">
+
+        <div class="row"> <!--rows starts here-->
+            <div class="col-md-4"> <!--col starts here-->
+                <div class="card shadow">
+                    <img src="img/new1.jpg" class="card-img-top pro_img" alt="...">
+                    <div class="card-body" style="height: 280px;">
+                        <h5 class="card-title">GRA Villa</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card’s content.</p>
+                        <p><b>Price: $30K</b></p>
+                    </div>
+
+                    <div class="card-body">
+                        <center>
+                            <hr>
+                            <a href="#!" onclick="buy_property('$30K', 'GRA Villa')"
+                                class="card-link btn btn-sm btn-secondary">Buy</a>
+                            <a href="property_details.html" class="card-link btn btn-sm btn-primary">Details</a>
+                        </center>
+                    </div>
+                </div>
+                <br><br>
+            </div> <!--col starts here-->
+
+
+            <div class="col-md-4"> <!--col starts here-->
+                <div class="card shadow">
+                    <img src="img/new3.jpeg" class="card-img-top pro_img" alt="...">
+                    <div class="card-body" style="height: 280px;">
+                        <h5 class="card-title">GRA Bencode</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card’s content.</p>
+                        <p><b>Price: $120K</b></p>
+                    </div>
+
+                    <div class="card-body">
+                        <center>
+                            <hr>
+                            <a href="#!" onclick=" buy_property('$120K', 'GRA Bencode')"
+                                class="card-link btn btn-sm btn-secondary">Buy</a>
+                            <a href="property_details.html" class="card-link btn btn-sm btn-primary">Details</a>
+                        </center>
+                    </div>
+                </div>
+                <br><br>
+            </div> <!--col starts here-->
+
+
+
+
+            <div class="col-md-4"> <!--col starts here-->
+                <div class="card shadow">
+                    <img src="img/new2.jpeg" class="card-img-top pro_img" alt="...">
+                    <div class="card-body" style="height: 280px;">
+                        <h5 class="card-title"> Ebere Estate</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card’s content.</p>
+                        <p><b>Price: $20K</b></p>
+                    </div>
+
+                    <div class="card-body">
+                        <center>
+                            <hr>
+                            <a href="#!" onclick=" buy_property('$20K', 'Ebere Estate')"
+                                class="card-link btn btn-sm btn-secondary">Buy</a>
+                            <a href="property_details.html" class="card-link btn btn-sm btn-primary">Details</a>
+                        </center>
+                    </div>
+                </div>
+            </div> <!--col starts here-->
+
+
+
+             <div class="col-md-4"> <!--col starts here-->
+                <div class="card shadow">
+                    <img src="img/new9.jpeg" class="card-img-top pro_img" alt="...">
+                    <div class="card-body" style="height: 280px;">
+                        <h5 class="card-title"> Ebere Estate</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card’s content.</p>
+                        <p><b>Price: $20K</b></p>
+                    </div>
+
+                    <div class="card-body">
+                        <center>
+                            <hr>
+                            <a href="#!" onclick=" buy_property('$20K', 'Ebere Estate')"
+                                class="card-link btn btn-sm btn-secondary">Buy</a>
+                            <a href="property_details.html" class="card-link btn btn-sm btn-primary">Details</a>
+                        </center>
+                    </div>
+                </div>
+            </div> <!--col starts here--> <div class="col-md-4"> <!--col starts here-->
+                <div class="card shadow">
+                    <img src="img/new4.jpg" class="card-img-top pro_img" alt="...">
+                    <div class="card-body" style="height: 280px;">
+                        <h5 class="card-title"> Ebere Estate</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card’s content.</p>
+                        <p><b>Price: $20K</b></p>
+                    </div>
+
+                    <div class="card-body">
+                        <center>
+                            <hr>
+                            <a href="#!" onclick=" buy_property('$20K', 'Ebere Estate')"
+                                class="card-link btn btn-sm btn-secondary">Buy</a>
+                            <a href="property_details.html" class="card-link btn btn-sm btn-primary">Details</a>
+                        </center>
+                    </div>
+                </div>
+            </div> <!--col starts here--> <div class="col-md-4"> <!--col starts here-->
+                <div class="card shadow">
+                    <img src="img/new8.jpg" class="card-img-top pro_img" alt="...">
+                    <div class="card-body" style="height: 280px;">
+                        <h5 class="card-title"> Ebere Estate</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card’s content.</p>
+                        <p><b>Price: $20K</b></p>
+                    </div>
+
+                    <div class="card-body">
+                        <center>
+                            <hr>
+                            <a href="#!" onclick=" buy_property('$20K', 'Ebere Estate')"
+                                class="card-link btn btn-sm btn-secondary">Buy</a>
+                            <a href="property_details.html" class="card-link btn btn-sm btn-primary">Details</a>
+                        </center>
+                    </div>
+                </div>
+            </div> <!--col starts here--> <div class="col-md-4"> <!--col starts here-->
+                <div class="card shadow">
+                    <img src="img/imgh3.webp" class="card-img-top pro_img" alt="...">
+                    <div class="card-body" style="height: 280px;">
+                        <h5 class="card-title"> Ebere Estate</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card’s content.</p>
+                        <p><b>Price: $20K</b></p><br>
+                    </div>
+
+                    <div class="card-body">
+                        <center>
+                            <hr>
+                            <a href="#!" onclick=" buy_property('$20K', 'Ebere Estate')"
+                                class="card-link btn btn-sm btn-secondary">Buy</a>
+                            <a href="property_details.html" class="card-link btn btn-sm btn-primary">Details</a>
+                        </center>
+                    </div>
+                </div>
+            </div> <!--col starts here--> <div class="col-md-4"> <!--col starts here-->
+                <div class="card shadow">
+                    <img src="img/imgh2.webp" class="card-img-top pro_img" alt="...">
+                    <div class="card-body" style="height: 280px;">
+                        <h5 class="card-title"> Ebere Estate</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card’s content.</p>
+                        <p><b>Price: $20K</b></p>
+                    </div>
+
+                    <div class="card-body">
+                        <center>
+                            <hr>
+                            <a href="#!" onclick=" buy_property('$20K', 'Ebere Estate')"
+                                class="card-link btn btn-sm btn-secondary">Buy</a>
+                            <a href="property_details.html" class="card-link btn btn-sm btn-primary">Details</a>
+                        </center>
+                    </div>
+                </div>
+            </div> <!--col starts here--> <div class="col-md-4"> <!--col starts here-->
+                <div class="card shadow">
+                    <img src="img/imgh1.jpeg" class="card-img-top pro_img" alt="...">
+                    <div class="card-body" style="height: 280px;">
+                        <h5 class="card-title"> Ebere Estate</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card’s content.</p>
+                        <p><b>Price: $20K</b></p>
+                    </div>
+
+                    <div class="card-body">
+                        <center>
+                            <hr>
+                            <a href="#!" onclick=" buy_property('$20K', 'Ebere Estate')"
+                                class="card-link btn btn-sm btn-secondary">Buy</a>
+                            <a href="property_details.html" class="card-link btn btn-sm btn-primary">Details</a>
+                        </center>
+                    </div>
+                </div>
+            </div> <!--col starts here-->
+
+
+        </div> <!--rows ends here-->
+
+      
+    </div>
+    <!-- list of properties ends here -->
+
+
+
+
+
+
+
+
+    <footer class="py-3 my-4" style="background-color: #000000;">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="index.html" class="nav-link px-2 ">Home</a></li>
+            <li class="nav-item"><a href="agents.html" class="nav-link px-2 ">Agent</a></li>
+            <li class="nav-item"><a href="properties.html" class="nav-link px-2 ">Properties</a></li>
+            <li class="nav-item"><a href="login.html" class="nav-link px-2 ">Login</a></li>
+            <li class="nav-item"><a href="register.html" class="nav-link px-2 ">Register</a></li>
+        </ul>
+        <p class="text-center ">&copy; 2025 Company, Inc</p>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+
+
+    <script>
+
+        // buy_property('$20K', 'Ebere Estate')
+
+
+        function buy_property(price, name) {
+
+            alert(`Thank you for purchasing this ${name} property, at ${price}`)
+
+        }
+    </script>
+
+
+
+
+
+</body>
+</html>

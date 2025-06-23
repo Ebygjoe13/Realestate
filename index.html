@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joe Exclusive Homes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/ebere.css">
+</head>
+
+<body>
+    <!-- nav bar starts here -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <!-- Logo on the left -->
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo/logo.avif" alt="Logo" width="100px">
+            </a>
+
+            <!-- Toggler for mobile view -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--toggler ends here-->
+
+
+            <!--nav menu starts here-->
+            <!-- Menu aligned to the right -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto"> <!-- Added ms-auto here -->
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="properties.html">Properties</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="agents.html">Agents</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            About
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="about.html">About us</a></li>
+                            <li><a class="dropdown-item" href="contact.html">Contact us</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Category
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="house.html">Houses</a></li>
+                            <li><a class="dropdown-item" href="dev.html">New Developments</a></li>
+                            <li><a class="dropdown-item" href="vil.html">Villas</a></li>
+                            <li><a class="dropdown-item" href="apartments.html">Apartments</a></li>
+                            <li><a class="dropdown-item" href="commercial.html">Commercial</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active btn btn-secondary text-white ebg_btn" aria-current="page"
+                            href="login.html">Login</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active btn btn-primary text-white ebg_btn" aria-current="page"
+                            href="register.html">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- nav bar ends here -->
+
+    <!-- corusel starts here -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-slide="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/imgh1.jpeg" class="d-block w-100 slide" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Welcome to Joe Exclusive Homes</h3>
+                    <br>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/imgh2.webp" class="d-block w-100 silde" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Second slide label</h3>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/imgh3.webp" class="d-block w-100 silde" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Third slide label</h3>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- carosel ends here -->
+
+
+    <!-- about us start here -->
+    <div class="container">
+        <br><br><br>
+        <h2 align="center">About Us</h2>
+        <br>
+        <div class="card m-3 shadow">
+            <div class="row g-0">
+                <div class="col-md-5">
+                    <img src="img/new1.jpg" class="img-fluid rounded-start" alt="About Logic Brain">
+                </div>
+
+
+                <div class="col-md-7">
+                    <div class="card-body">
+                        <h5 class="card-title">Joe's Exclusive Homes</h5>
+                        <p class="card-text">Joe Exclusive Homes is a full-service real estate company specializing in
+                            residential
+                            and commercial properties across urban and suburban markets. With a reputation for
+                            personalized service
+                            and deep market expertise, they guide clients through every step of buying, selling, or
+                            leasing real
+                            estate.
+
+                            <center>
+                                <a href="about.html" class="btn btn-primary">Read More</a>
+                            </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- about us ends here -->
+
+    <!-- list of properties strat here -->
+    <div class="container">
+        <br><br><br>
+        <h2 align="center">Properties</h2>
+        <br>
+
+        <div class="row"> <!--rows starts here-->
+            <div class="col-md-4"> <!--col starts here-->
+                <div class="card shadow">
+                    <img src="img/new2.jpeg" class="card-img-top pro_img" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Oberneuland</h5>
+                        <p class="card-text">Charming 3-Bedroom Villa in Oberneuland
+                            🌍 Location: Bremen, Germany</p>
+                        <p><b>Price: €850,000 <br> 🏡 3 beds | 2 baths | 1,500 m² land</b></p>
+                    </div>
+
+                    <div class="card-body">
+                        <center>
+                            <hr>
+                            <a href="#!" onclick="buy_property('€850,000 ', 'Oberneuland')"
+                                class="card-link btn btn-sm btn-secondary">Buy</a>
+                            <a href="property_details.html" class="card-link btn btn-sm btn-primary">Details</a>
+                        </center>
+                    </div>
+                </div>
+            </div> <!--col starts here-->
+
+            <div class="col-md-4"> <!--col starts here-->
+                <div class="card shadow">
+                    <img src="img/new4.jpg" class="card-img-top pro_img" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Huchting</h5>
+                        <p class="card-text">Charming 3-Bedroom Villa in Huchting
+                            🌍 Location: Bremen, Germany</p>
+                        <p><b>Price:Price: €650,000 <br> 🏡 3 beds | 2 baths | 1,500 m² land </b></p>
+                    </div>
+
+                    <div class="card-body">
+                        <center>
+                            <hr>
+                            <a href="#!" onclick=" buy_property('€650,000 ', 'Huchting')"
+                                class="card-link btn btn-sm btn-secondary">Buy</a>
+                            <a href="property_details.html" class="card-link btn btn-sm btn-primary">Details</a>
+                        </center>
+                    </div>
+                </div>
+            </div> <!--col starts here-->
+
+            <div class="col-md-4"><!--another col-->
+                <div class="card shadow">
+                    <img src="img/new3.jpeg" class="card-img-top pro_img" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Lilienthal</h5>
+                        <p class="card-text">Charming 4-Bedroom Villa in Lilienthal
+                            🌍 Location: Bremen, Germany</p>
+                        <p><b>Price: €500,000 <br> 🏡 3 beds | 2 baths | 1,500 m² land</b></p>
+
+                    </div>
+
+                    <div class="card-body">
+                        <center>
+                            <hr>
+                            <a href="#!" onclick="buy_property('€500,000 ', 'Lilienthal')"
+                                class="card-link btn btn-sm btn-secondary">Buy</a>
+                            <a href="property_details.html" class="card-link btn btn-sm btn-primary">Details</a>
+                        </center>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+        <!--list of properties ends here-->
+
+        <!-- categories starts here -->
+        <!-- categories starts here -->
+        <div class="row justify-content-center">
+
+            <div class="col-md-2 shadow p-2 m-2 text-center">
+                <img src="img/real9.jpeg" class="cat_img" alt="Houses Category" width="100%" />
+                <h3><a href="house.html">Houses</a></h3>
+            </div>
+
+            <div class="col-md-2 shadow p-2 m-2 text-center">
+                <img src="img/real7.jpeg" class="cat_img" alt="New Developments" />
+                <h3><a href="dev.html">Apartments</a></h3>
+            </div>
+
+            <div class="col-md-2 shadow p-2 m-2 text-center">
+                <img src="img/real6.jpeg" class="cat_img" alt="Penthouse" />
+                <h3><a href="dev.html">Penthouse</a></h3>
+            </div>
+
+            <div class="col-md-2 shadow p-2 m-2 text-center">
+                <img src="img/real4.jpeg" class="cat_img" alt="offices" />
+                <h3><a href="dev.html">offices</a></h3>
+            </div>
+
+            <div class="col-md-2 shadow p-2 m-2 text-center">
+                <img src="img/real5.jpeg" class="cat_img" alt="Investors" />
+                <h3><a href="dev.html">Investors</a></h3>
+            </div>
+
+        </div>
+        <br>
+
+        <!--categories ends here-->
+
+        <!--agents starts here-->
+        <div class="container">
+
+            <br><br><br>
+            <h2 align="center">Our Agents</h2>
+            <br>
+
+
+            <div class="row">
+
+                <!-- agents details starts here -->
+                <div class="col-md-3 ">
+                    <div class="card" style="width: 100%">
+                        <img src="img/agents/p1.jpeg" class="card-img-top " alt="...">
+                        <div class="card-body" style="height: 280px;">
+                            <h5>Esther Ibekwe</h5>
+                            <p class="card-text">As a professional real estate agent, I specialize in matching clients
+                                with properties that suit their needs and lifestyle. My goal is to make every
+                                transaction smooth, transparent, and rewarding.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- agents details starts here -->
+
+
+
+                <!-- agents details starts here -->
+                <div class="col-md-3 ">
+                    <div class="card" style="width: 100%;">
+                        <img src="img/agents/p2.jpeg" class="card-img-top " alt="...">
+                        <div class="card-body " style="height: 280px;">
+                            <h5>Paul Johan</h5>
+                            <p class="card-text">A dedicated real estate agent committed to helping clients find their
+                                perfect home or investment. With an understanding of the market and a passion for
+                                service. I guide buyers and sellers through every step of the process.
+                                </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- agents details starts here -->
+
+
+
+
+                <!-- agents details starts here -->
+                <div class="col-md-3 ">
+                    <div class="card" style="width: 100%;">
+                        <img src="img/agents/p3.jpeg" class="card-img-top " alt="...">
+                        <div class="card-body  " style="height: 280px;">
+                            <h5>Helena Kovalska</h5>
+                            <p class="card-text">I am a passionate real estate agent focused on delivering personalized
+                                service and reliable guidance. Whether you're buying, selling, or investing, I’m here to
+                                help you make confident, informed decisions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- agents details starts here -->
+
+
+
+
+                <!-- agents details starts here -->
+                <div class="col-md-3 ">
+                    <div class="card" style="width: 100%;">
+                        <img src="img/agents/p4.jpg" class="card-img-top " alt="...">
+                        <div class="card-body "style="height: 280px;">
+                            <h5>Alex Schmidt</h5>
+                            <p class="card-text">As a knowledgeable and approachable real estate agent, I strive to make
+                                your property journey seamless and stress-free. I’m dedicated to achieving the best
+                                outcomes for my clients through honesty, expertise, and hard work.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- agents details starts here -->
+
+            </div>
+        </div>
+        <!-- agents ends here -->
+
+        <!--footer starts here-->
+
+        <footer class="py-3 my-4" style="background-color: #000000;">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="index.html" class="nav-link px-2 ">Home</a></li>
+                <li class="nav-item"><a href="agents.html" class="nav-link px-2 ">Agent</a></li>
+                <li class="nav-item"><a href="properties.html" class="nav-link px-2 ">Properties</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link px-2 ">Login</a></li>
+                <li class="nav-item"><a href="register.html" class="nav-link px-2 ">Register</a></li>
+            </ul>
+            <p class="text-center ">&copy; 2025 Company, Inc</p>
+        </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+            crossorigin="anonymous"></script>
+
+
+        <script>
+
+            // buy_property('$20K', 'Ebere Estate')
+
+
+            function buy_property(price, name) {
+
+                alert(`Thank you for purchasing this ${name} property, at ${price}`)
+
+            }
+        </script>
+
+
+
+
+</body>
+
+</html>
